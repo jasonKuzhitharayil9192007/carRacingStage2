@@ -12,15 +12,27 @@
     <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
 
 
-    <script>
-      //Your web app's Firebase configuration
-      
-      // // Initialize Firebase
-      // firebase.initializeApp(firebaseConfig);
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-database.js"></script>
 
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    </script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDq0G7PaEid8RXZ9on5W8qEYNxUkW77S7Q",
+    authDomain: "realtime-database-1aa55.firebaseapp.com",
+    databaseURL: "https://realtime-database-1aa55-default-rtdb.firebaseio.com",
+    projectId: "realtime-database-1aa55",
+    storageBucket: "realtime-database-1aa55.appspot.com",
+    messagingSenderId: "25376647753",
+    appId: "1:25376647753:web:b11d5b4ce0a466757dad98"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
 
     <script src="js/Player.js"></script>
     <script src="js/Form.js"></script>
