@@ -51,14 +51,14 @@ class Game {
     
     // !== means not equal to
     if(allPlayers !== undefined){
-      background("brown");
+      background("#c68767");
       image(track,0,-displayHeight*4,displayWidth,displayHeight*5);
       
       //index of the array
       var index = 0;
 
       //x and y position of the cars
-      var x = 180;
+      var x = 200;
       var y;
 
       for(var plr in allPlayers){
@@ -66,7 +66,7 @@ class Game {
         index = index + 1 ;
 
         //position the cars a little away from each other in x direction
-        x = x + 200;
+        x = x + 300;
         //use data form the database to display the cars in y direction
         y = displayHeight - allPlayers[plr].distance;
         cars[index-1].x = x;
@@ -76,6 +76,9 @@ class Game {
           cars[index - 1].shapeColor = "red";
           camera.position.x = displayWidth/2;
           camera.position.y = cars[index-1].y
+          stroke(10);
+          fill("red");
+          ellipse(x,y,60,60);
         }
        
         //textSize(15);
